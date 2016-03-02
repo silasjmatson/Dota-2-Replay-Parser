@@ -31,6 +31,7 @@ defmodule Dota2parser do
   end
 
   defp parse_message(_binary, parsed_messages) do
+    # _binary is <<5>>, are all replay files terminated like this?
     parsed_messages
   end
 end
