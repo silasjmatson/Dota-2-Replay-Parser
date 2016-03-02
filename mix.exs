@@ -28,7 +28,7 @@ defmodule Dota2parser.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [{:gpb , github: "tomas-abrahamsson/gpb"}]
   end
 
   defp escript_config do
