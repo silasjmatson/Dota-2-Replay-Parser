@@ -1,5 +1,5 @@
 defmodule Dota2parser do
-
+  import Protobufs
 
 
   @doc """

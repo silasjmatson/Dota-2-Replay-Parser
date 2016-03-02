@@ -1,1 +1,2 @@
-%{"gpb": {:git, "https://github.com/tomas-abrahamsson/gpb.git", "4fed47528fdf5896947ceaa48aad862c5f70c5ad", []}}
+%{"exprotobuf": {:hex, :exprotobuf, "1.0.0"},
+  "gpb": {:hex, :gpb, "3.18.10"}}
