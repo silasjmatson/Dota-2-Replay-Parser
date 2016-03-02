@@ -20,12 +20,14 @@ defmodule Dota2parser do
   end
 
   defp parse_message(<< command :: size(8),
-                        type :: size(8),
+                        tick :: size(8),
                         message_length :: size(8),
                         message :: size(message_length)-unit(8),
                         messages :: binary>>,
                         parsed_messages) do
-    # message = %Message{ # parse stuff into it here }
+    # extract message type and compressed flag
+    # from command (see https://github.com/dotabuff/manta/blob/master/parser.go#L193)
+
     parsed_messages = [message | parsed_messages]
     parse_message(messages, parsed_messages)
   end
